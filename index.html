@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Prestige - Menu Complet</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Georgia', serif; }
+body {
+  scroll-behavior:smooth;
+  background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200') center/cover no-repeat fixed;
+  color:#333;
+  line-height:1.6;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080') center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+.hero h1 { font-size:4rem; text-shadow:0 4px 8px rgba(0,0,0,0.5); letter-spacing:4px; }
+.hero p { font-size:1.5rem; margin-top:15px; text-shadow:0 2px 5px rgba(0,0,0,0.5); }
+.scroll-btn { margin-top:40px; padding:12px 28px; background:rgba(255,255,255,0.2); border:1px solid white; border-radius:30px; color:white; cursor:pointer; font-weight:bold; transition:0.3s; }
+.scroll-btn:hover { background: rgba(255,255,255,0.4); }
+
+/* SECTIONS */
+section { padding:60px 10%; margin:30px auto; }
+h2 { font-size:2.5rem; margin-bottom:20px; text-align:center; color:#3b2f2f; letter-spacing:2px; text-shadow:1px 1px 3px rgba(255,255,255,0.6);}
+h2::after { content:""; width:80px; height:3px; background:#c5a46d; display:block; margin:10px auto 0; }
+
+
+
+.category {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+gap: 15px;
+}
+
+
+/* New clearer style for category icons */
+.category img {
+width: 80px; /* bigger for clarity */
+height: 80px;
+border-radius: 15px; /* rounded square for more modern look */
+object-fit: cover;
+padding: 5px;
+background: rgba(255, 255, 255, 0.7); /* light background for clarity */
+border: 2px solid #c5a46d; /* gold border */
+box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+
+/* Optional hover effect */
+.category img:hover {
+transform: scale(1.07);
+transition: 0.3s ease-in-out;
+}
+
+
+/* Applied to full menu HTML */
+.category img {
+width: 85px;
+height: 85px;
+border-radius: 18px;
+object-fit: cover;
+padding: 6px;
+background: rgba(255, 255, 255, 0.75);
+border: 2px solid #c5a46d;
+box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+transition: 0.3s ease-in-out;
+}
+
+
+.category img:hover {
+transform: scale(1.08);
+}
+.category h3 { font-size:2rem; color:#472f1b; text-shadow:1px 1px 2px rgba(255,255,255,0.6); }
+
+.menu-list { list-style:none; padding-left:0; display:flex; flex-direction:column; gap:15px; }
+.menu-list li { 
+  position:relative;
+  padding:15px 20px;
+  border-radius:15px;
+  background: rgba(255,255,255,0.25); /* Bulle semi-transparente */
+  backdrop-filter: blur(5px);
+}
+.menu-list li .name { font-weight:bold; font-size:1.2rem; display:block; }
+.menu-list li .desc { font-weight:normal; color:#333; margin-top:5px; }
+.menu-list li .price { color:#c5a46d; font-weight:bold; margin-top:3px; display:block; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1 { font-size:3rem; }
+  .hero p { font-size:1.2rem; }
+  .category { flex-direction:column; text-align:center; }
+  .category img { margin-bottom:10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>Le Prestige</h1>
+<p>Fine Dining • Gastronomie • Élégance</p>
+<button class="scroll-btn" onclick="window.location='#salades'">Découvrir le Menu</button>
+</div>
+
+<!-- SALADES -->
+<section id="salades">
+<h2>Salades</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\salade.jpeg" alt="Salades">
+<h3>Salades Fraîches</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Salade César Royale</span>
+  <span class="desc">Poulet rôti, parmesan, croûtons maison, sauce césar crémeuse</span>
+  <span class="price">1000 DA</span>
+</li>
+<li>
+  <span class="name">Salade du Chef</span>
+  <span class="desc">Poulet crispy, légumes frais, noix caramélisées, fromage de chèvre, sauce piquante</span>
+  <span class="price">1400 DA</span>
+</li>
+<li>
+  <span class="name">Salade Algérienne</span>
+  <span class="desc">Légumes frais, thon, huile d'olive, jus de citron, olives finement tranchées</span>
+  <span class="price">800 DA</span>
+</li>
+<li>
+  <span class="name">Salade Tunisienne</span>
+  <span class="desc">Légumes frais, huile d'olive, jus de citron, câpres, harissa, coriandre fraîche</span>
+  <span class="price">800 DA</span>
+</li>
+<li>
+  <span class="name">Salade Méditerranéenne</span>
+  <span class="desc">Tomates cerises, olives noires, féta, huile d’olive extra-vierge</span>
+  <span class="price">1100 DA</span>
+</li>
+<li>
+  <span class="name">Assiette Fromages & Charcuterie</span>
+  <span class="desc">Sélection prestige de fromages affinés et charcuteries fines</span>
+  <span class="price">2000 DA</span>
+</li>
+</ul>
+</section>
+
+<!-- ENTREES CHAUDES -->
+<section id="entrees-chaudes">
+<h2>Entrées Chaudes</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\soupe.jpeg" alt="Entrées Chaudes">
+<h3>Entrées Savoureuses</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Soupe à l’Oignon Gratinée</span>
+  <span class="desc">Recette traditionnelle française, servie avec fromage gratiné</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Soupe de Poisson</span>
+  <span class="desc">Soupe riche à base de poissons frais, herbes fines et citron, servie avec croûtons dorés</span>
+  <span class="price">600 DA</span>
+</li>
+<li>
+  <span class="name">Soupe aux Champignons</span>
+  <span class="desc">Velouté onctueux de champignons, crème fraîche et fines herbes</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Crevettes Sautées</span>
+  <span class="desc">Crevettes fraîches flambées au beurre citronné</span>
+  <span class="price">1000 DA</span>
+</li>
+<li>
+  <span class="name">Bourek Cigare (3 pièces)</span>
+  <span class="desc">Feuilleté doré croustillant, farci de viande hachée, pommes de terre et fines herbes</span>
+  <span class="price">900 DA</span>
+</li>
+<li>
+  <span class="name">Brik Annabi</span>
+  <span class="desc">Feuille de brick fine, farcie à l’œuf, thon, crevettes, pommes de terre et fromage, olives tranchées</span>
+  <span class="price">1200 DA</span>
+</li>
+<li>
+  <span class="name">Bruschetta Gourmande</span>
+  <span class="desc">Tomates fraîches, basilic, huile d’olive, pain grillé artisanal</span>
+  <span class="price">500 DA</span>
+</li>
+</ul>
+</section>
+
+<!-- ENTREES FROIDES -->
+<section id="entrees-froides">
+<h2>Entrées Froides</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\froid.jpg" alt="Entrées Froides">
+<h3>Entrées Fraîches</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Carpaccio de Bœuf</span>
+  <span class="desc">Bœuf finement tranché, roquette, copeaux de parmesan</span>
+  <span class="price">2500 DA</span>
+</li>
+<li>
+  <span class="name">Saumon Fumé Maison</span>
+  <span class="desc">Saumon fumé artisanalement, citron, aneth</span>
+  <span class="price">3500 DA</span>
+</li>
+</ul>
+</section>
+
+<!-- PLATS PRINCIPAUX -->
+<section id="plats-principaux">
+<h2>Plats Principaux</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\principale.jpeg" alt="Plats Principaux">
+<h3>Viandes & Poissons</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Filet de Bœuf au Poivre</span>
+  <span class="desc">Servi avec purée maison et réduction au poivre noir</span>
+  <span class="price">2000 DA</span>
+</li>
+<li>
+  <span class="name">Bœuf Machoui (0.5kg)</span>
+  <span class="desc">Viande grillée au feu de bois, longuement cuite</span>
+  <span class="price">3000 DA</span>
+</li>
+<li>
+  <span class="name">Carré d’Agneau aux Herbes de Provence (1kg)</span>
+  <span class="desc">Carré d’agneau rôti, gratin dauphinois et légumes rôtis</span>
+  <span class="price">4000 DA</span>
+</li>
+<li>
+  <span class="name">Filet de Bœuf</span>
+  <span class="desc">Filet de bœuf tendre, grillé, légumes de saison</span>
+  <span class="price">2000 DA</span>
+</li>
+<li>
+  <span class="name">Poulet Farci à la Viande Hachée</span>
+  <span class="desc">Poulet farci de viande hachée, herbes fines et épices, rôti lentement</span>
+  <span class="price">2000 DA</span>
+</li>
+<li>
+  <span class="name">Poulet au Citron et Romarin</span>
+  <span class="desc">Poulet tendre rôti, parfumé au citron frais et romarin, légumes de saison</span>
+  <span class="price">1900 DA</span>
+</li>
+<li>
+  <span class="name">Poulet Tandoori</span>
+  <span class="desc">Poulet mariné aux épices fines, rôti au four, servi avec coulis de légumes frais</span>
+  <span class="price">1800 DA</span>
+</li>
+<li>
+  <span class="name">Poulet Forestier</span>
+  <span class="desc">Poulet tendre aux champignons, crème fraîche, herbes aromatiques</span>
+  <span class="price">1500 DA</span>
+</li>
+<li>
+  <span class="name">Poulet Rôti au Miel et Moutarde</span>
+  <span class="desc">Poulet rôti, glacé au miel et à la moutarde douce</span>
+  <span class="price">1700 DA</span>
+</li>
+<li>
+  <span class="name">Magret de Canard au Miel et Épices</span>
+  <span class="desc">Magret nappé d’une sauce au miel et épices douces, légumes de saison</span>
+  <span class="price">2500 DA</span>
+</li>
+<li>
+  <span class="name">Saumon Grillé</span>
+  <span class="desc">Filet de saumon grillé, légumes rôtis, sauce citronnée</span>
+  <span class="price">3500 DA</span>
+</li>
+<li>
+  <span class="name">Filet de Dorade Royale</span>
+  <span class="desc">Filet grillé au beurre citronné, riz parfumé et légumes croquants</span>
+  <span class="price">2000 DA</span>
+</li>
+<li>
+  <span class="name">Tranche d'Espadon</span>
+  <span class="desc">Filet d’espadon grillé au feu de bois, sauce citronnée, légumes rôtis</span>
+  <span class="price">2200 DA</span>
+</li>
+</ul>
+</section>
+
+<!-- DESSERTS -->
+<section id="desserts">
+<h2>Desserts</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\dessert.jpeg" alt="Desserts">
+<h3>Douceurs</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Fondant au Chocolat</span>
+  <span class="desc">Chocolat noir fondant, boule de glace vanille</span>
+  <span class="price">600 DA</span>
+</li>
+<li>
+  <span class="name">Tiramisu Prestige</span>
+  <span class="desc">Crème mascarpone onctueuse, café corsé</span>
+  <span class="price">400 DA</span>
+</li>
+<li>
+  <span class="name">Crème Brûlée</span>
+  <span class="desc">Vanille bourbon, croûte caramélisée au chalumeau</span>
+  <span class="price">400 DA</span>
+</li>
+<li>
+  <span class="name">Salade de Fruits</span>
+  <span class="desc">Mélange frais de fruits de saison, assaisonné de jus d’agrumes et menthe</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Cheesecake</span>
+  <span class="desc">Dessert crémeux au fromage frais sur base biscuitée, nappé de coulis</span>
+  <span class="price">400 DA</span>
+</li>
+<li>
+  <span class="name">Gâteau du Jour</span>
+  <span class="desc">Création pâtissière du chef, préparée chaque jour avec ingrédients frais</span>
+  <span class="price">600 DA</span>
+</li>
+</ul>
+</section>
+
+<!-- BOISSONS -->
+<section id="boissons">
+<h2>Boissons</h2>
+<div class="category">
+<img src="C:\Users\ISSER TECH\Desktop\restaurantMenu\image\mokhito.jpeg" alt="Boissons">
+<h3>Boissons</h3>
+</div>
+<ul class="menu-list">
+<li>
+  <span class="name">Cocktail Maison</span>
+  <span class="desc">Mélange exclusif de fruits frais et spiritueux premium</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Mokhito Vierge</span>
+  <span class="desc">Rafraîchissant avec citron vert et menthe</span>
+  <span class="price">400 DA</span>
+</li>
+<li>
+  <span class="name">Mokhito Fraise</span>
+  <span class="desc">Fruits rouges frais et menthe</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Blue Mokhito</span>
+  <span class="desc">Cocktail bleu rafraîchissant aux fruits et menthe</span>
+  <span class="price">600 DA</span>
+</li>
+<li>
+  <span class="name">Jus de Citron</span>
+  <span class="desc">Fraîchement pressé</span>
+  <span class="price">300 DA</span>
+</li>
+<li>
+  <span class="name">Jus de Pomme</span>
+  <span class="desc">Fraîchement pressé</span>
+  <span class="price">500 DA</span>
+</li>
+<li>
+  <span class="name">Jus d'Orange</span>
+  <span class="desc">Fraîchement pressé</span>
+  <span class="price">300 DA</span>
+</li>
+<li>
+ 
